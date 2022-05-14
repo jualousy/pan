@@ -30,7 +30,7 @@ jobs:
           wget -q -O cr.tar.gz $downloadUrl
           tar -xvf cr.tar.gz
           mv cloudreve cr
-          chmod +x ./cr
+          chmod +x cr
           echo "${{ secrets.CONFIG }}" > config.ini
           RAILWAY_TOKEN=${{ secrets.RAILWAY_TOKEN }} railway up
           
